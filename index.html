@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="avatar do Pinheiro" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Pinheiro_</p>
+        <h1>Eu sou estudante</h1>
+        <p>Sou estudante da 3 série do ensino médio. Sou do etinerário de exatas, e ao longo do ensino médio desenvolvi alguns projetos. Veja os projetos
+            que já desenvolvi!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">criativo</p>
+            <p class="badge bg-secondary">organizado</p>
+            <p class="badge bg-secondary">engraçado</p>
+            <p class="badge bg-secondary">esforçado</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo de corrida</h5>
+                        <p class="card-text">O projeto “Jogo de Corrida” simula uma competição divertida entre personagens representados por emojis de animais, que funcionam como corredores em uma pista. Cada jogador pode controlar um dos corredores através das teclas do teclado, pressionando repetidamente para fazer seu personagem avançar. O primeiro a cruzar a linha de chegada quadriculada é o vencedor. Esse jogo foi desenvolvido com lógica de movimentação por teclas, controle de velocidade e uso de elementos visuais fixos e móveis, sendo uma introdução divertida ao conceito de jogos no p5.js.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Arte interativa</h5>
+                        <p class="card-text">O projeto “Arte Interativa” consiste na criação de um rosto estilizado emoldurado por faixas coloridas, utilizando apenas formas geométricas como círculos, retângulos, triângulos e linhas. O destaque principal está na interatividade: os olhos do personagem acompanham o movimento do cursor do mouse, criando uma sensação de que o personagem está observando o usuário em tempo real. Desenvolvido no ambiente p5.js, o projeto combina arte digital e programação criativa, explorando conceitos de interação com o mouse e posicionamento dinâmico de elementos gráficos.
+</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Catálago de vídeos
+                        </h5>
+                        <p class="card-text">O projeto “Catálogo de Vídeos”, nomeado de forma criativa como Pinheiroflix, é uma interface inspirada em plataformas de streaming como a Netflix, mas voltada ao público infantil. A proposta foi criar um ambiente visual onde vídeos da Turma da Mônica são organizados em seções temáticas, como "Maratona Mônica e Magali", "Hora do Lanche", entre outras. O catálogo foi construído com blocos coloridos, textos e imagens, simulando botões e miniaturas de episódios. A página inclui também um vídeo incorporado (simulado com iframe), aproximando ainda mais da experiência de uma plataforma real de entretenimento. O foco principal do projeto é o design de interface e organização de conteúdo visual.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jogo de corrida</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O “Jogo de Corrida” é um mini game interativo que simula uma corrida entre quatro personagens, cada um representado por emojis de animais tradicionais do teclado (como tartaruga, canguru, cervo e gambá). O cenário é uma pista de corrida com um fundo verde, representando grama, e uma linha de chegada quadriculada na parte inferior da tela.</p>
+                    <p>Cada jogador controla um animal específico e precisa pressionar rapidamente uma tecla do teclado para mover seu personagem para frente, em direção à linha de chegada. O jogo é programado para detectar essas interações com as teclas (keyPressed()) e alterar a posição dos emojis horizontalmente, como se estivessem avançando.</p>
+                    <p>O movimento dos personagens é feito por incremento de coordenadas, de forma simples, mas funcional: quanto mais vezes o jogador pressiona a tecla, mais rápido o emoji se aproxima da linha final. Quando um dos animais cruza a linha de chegada, o jogo pode indicar visualmente que há um vencedor (mensagem ou mudança de cor, se programado).</p>
+                    <p>Conceitos trabalhados:
+
+Lógica de movimentação por evento de tecla.
+
+Uso de emojis como sprites visuais.
+
+Controle individual por jogador.
+
+Atualização de posições com variáveis.
+
+Simulação de competição com elementos visuais.
+
+Objetivo educacional/artístico:
+O projeto visa introduzir os fundamentos da programação de jogos simples, incentivando a criatividade ao substituir sprites por emojis. Trabalha lógica de movimento, interatividade, e feedback visual, sendo um ótimo exercício para quem está começando no desenvolvimento de games com p5.js.</p>
+                    <img src="img/projeto-1.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001092285179sp/full/s_gjLjo79">Ver projeto ao vivo</a>
+                    <a href="https://editor.p5js.org/00001092285179sp/sketches/s_gjLjo79">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Arte interativa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Descrição completa:
+
+O projeto “Arte Interativa” foi desenvolvido no ambiente p5.js com o objetivo de explorar a combinação entre arte visual e interatividade com o usuário. A proposta consiste na criação de um rosto estilizado, desenhado inteiramente com formas geométricas básicas, como:
+
+Círculos (para os olhos),
+
+Triângulos (para o nariz e o boné),
+
+Retângulos e linhas (para a moldura e a boca).
+                    </p>
+                    <p>O personagem ocupa o centro de uma moldura colorida composta por faixas retangulares dispostas em camadas, criando um efeito visual de profundidade e enquadramento. Cada cor foi cuidadosamente escolhida para destacar áreas específicas da moldura e manter a atenção centralizada no rosto.</p>
+                    <p>A funcionalidade interativa do projeto está nos olhos do personagem, que são programados para seguir o cursor do mouse. Isso é feito calculando a posição do ponteiro em relação ao centro de cada olho e desenhando as pupilas de forma que se movam em tempo real conforme o usuário move o mouse pela tela.</p>
+                    <p>Conceitos trabalhados:
+
+Coordenadas relativas e absolutas.
+
+Detecção da posição do mouse (mouseX, mouseY).
+
+Geometria e proporções faciais simplificadas.
+
+Interatividade gráfica em tempo real.
+
+Estilo artístico digital com estética moderna e minimalista.
+
+Objetivo educacional/artístico:
+Esse projeto introduz a ideia de que arte e programação podem caminhar juntas, promovendo criatividade através da lógica. Além disso, ele ensina fundamentos de interatividade e uso de variáveis dinâmicas no p5.js.
+                    </p>
+                    <img src="img/projeto-2.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001092285179sp/full/8gw5Ur0fi">Ver projeto ao
+                        vivo</a>
+                    <a href="https://editor.p5js.org/00001092285179sp/sketches/8gw5Ur0fi">Ver código do
+                        projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Descrição completa:
+
+O projeto “Catálogo de Vídeos”, apelidado de Pinheiroflix, é uma recriação artística e funcional de uma plataforma de streaming, voltada para o público infantil, especialmente para fãs da Turma da Mônica. A proposta é oferecer uma interface visual onde os usuários possam visualizar diferentes vídeos organizados em seções temáticas.
+
+A tela inicial do catálogo apresenta um vídeo em destaque, posicionado ao lado de um título em letras grandes e um subtítulo com hashtag para reforçar a identidade do conteúdo (#turma-da-mônica). A interface utiliza cores vivas e contrastantes, como o vermelho, amarelo e verde-limão, que são atraentes ao olhar infantil e remetem à identidade visual da série.</p>
+                    <p>Abaixo do vídeo principal, há uma galeria de miniaturas, representando “maratonas” ou seções específicas de vídeos, como:
+
+Maratona Mônica e Magali,
+
+Parabéns, Cebolinha!,
+
+Hora do Lanche.
+
+Essas miniaturas funcionam como botões simulados, desenhados com imagens e textos integrados. Visualmente, imitam a rolagem horizontal de plataformas reais como Netflix e YouTube Kids.
+
+Embora o sistema não funcione como um player real com navegação entre vídeos (a funcionalidade pode estar representada apenas visualmente), a estrutura do projeto já indica organização de conteúdo, hierarquia visual e foco em design gráfico e usabilidade.</p>
+                    <p>Conceitos trabalhados:
+
+Criação de interface gráfica com p5.js.
+
+Organização de conteúdo visual por categorias.
+
+Elementos gráficos simulando funcionalidades reais (UI/UX).
+
+Incorporação de vídeos externos com createElement() ou iframe.
+
+Design voltado ao público-alvo (infantil).
+
+Objetivo educacional/artístico:
+O projeto tem como foco mostrar que programar interfaces de forma criativa é possível, mesmo com ferramentas simples como p5.js. É uma excelente atividade para desenvolver pensamento visual, estruturação de layout e aproximação entre design digital e programação.</p>
+                    <img src="img/projeto-3.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://gabrielpinheiroalura.github.io/PINHEIROFLIX/">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/gabrielpinheiroalura">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Eugênia Vilhena 2025. Produzido por Gabriel Pinheiro</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
